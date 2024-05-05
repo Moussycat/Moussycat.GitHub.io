@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.maxi-largeur{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/*barnav*/
+.barnav{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+.barnav.sticky{
+    padding: 15px 0;
+    background-color:black;
+}
+.barnav .maxi-largeur{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.barnav .logo a{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.barnav .Menu li{
+    list-style: none;
+    display: inline-block; /* modifie l'affichage et permet de faire une barre complete*/
+}
+.barnav .Menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.barnav .Menu li a:hover{
+    color:rgb(201, 164, 0);
+    text-decoration: none;
+}
+.barnav.sticky .Menu li a:hover{
+    color: rgb(201, 164, 0) ;
+    text-decoration: none;
+}
+
+/* accueil*/
+.accueil{
+    display: flex;
+    background-image: url("../images/imag_fond_profil.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+.accueil .maxi-largeur{
+    margin: auto 0 auto 40px;
+}
+.accueil .accueil-content .text-1{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.accueil .accueil-content .text-2{
+    font-size: 35px;
+    margin: 5px 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+/*A propos*/ 
+section{
+    padding: 100px 0;
+}
+.a_propos{
+    font-family: 'Segoe UI', sans-serif;
+}
+.a_propos .titre{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.a_propos .a_propos-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*gestion des lignes*/
+    justify-content: space-between;
+}
+.a_propos .a_propos-content .colonne_gauche{
+    width: 45%;
+}
+.a_propos .a_propos-content .colonne_droite{
+    width: 50%;
+    margin-left: 5px;
+}
+.a_propos .a_propos-content .colonne_gauche img{
+    height:400px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 500px;
+}
+.a_propos .a_propos-content .colonne_droite .texte_a_propos{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.a_propos .a_propos-content .colonne_droite p{
+    text-align: justify; /* text bloc align*/
+}
+.a_propos .a_propos-content .colonne_droite a{
+    display: inline-block;
+    background: rgb(201, 164, 0);
+    font-size: 20px;
+    font-weight: 450;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 2px solid rgb(201, 164, 0);
+    transition: all 0.3s ease;
+    text-align: justify; /* text bloc align*/
+}
+.a_propos .a_propos-content .colonne_droite a:hover{
+    color:rgb(201, 164, 0);
+    background: none;
+}
+
+/* Competences*/
+section{
+    padding: 100px 0;
+    height: 100%;
+}
+.competences{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    color: white;
+}
+.competences .titre{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.competences .competences-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*gestion des lignes*/
+    justify-content: space-between;
+}
+.competences .competences-content .colonne_gauche{
+    width: 50%;
+}
+.competences .competences-content .colonne_droite{
+    width: 40%;
+    margin-left: 5px;
+}
+.competences .competences-content .colonne_gauche .texte_competences{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.competences .competences-content .colonne_gauche a{
+    display: inline-block;
+    background: rgb(201, 164, 0);
+    font-size: 20px;
+    font-weight: 450;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 2px solid rgb(201, 164, 0);
+    transition: all 0.3s ease;
+    text-align: justify; /* text bloc align*/
+}
+.competences .competences-content .colonne_gauche a:hover{
+    color:rgb(201, 164, 0);
+    background: none;
+}
+.competences .competences-content .colonne_droite .matiere span{
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+/*Barres de progression*/
+
+.competences .competences-content .colonne_droite .progress-bar {
+    height: 100%;
+    width: 100%;
+    /*position: relative;*/
+}
+
+
+/*Projet*/
+section{
+    padding: 100px 0;
+    height: 120%;
+}
+.projet{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    color: white;
+}
+.projet .projet-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*gestion des lignes*/
+    justify-content: space-between;
+}
+.projet .titre{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.projet .projet-content .carte .box svg{
+    color: rgb(201, 164, 0);
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+.projet .projet-content .carte{
+    width: 31%;
+    background: rgb(48, 48, 48);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 20px;
+    transition: all 0.3s ease;
+}
+.projet .projet-content .carte .box{
+    transition: all 0.3s ease;
+}
+.projet .projet-content .carte:hover .box{
+    transform: scale(1.07);/*quand on passe dessus tout ce qui a dans bax s'agrandi de 1.07*/
+}
+.projet .projet-content .carte:hover{
+    background: rgba(201, 164, 0, 0.548);
+}
+.projet .projet-content .carte .texte_projet{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.projet .projet-content .carte:hover .texte_projet{
+    background: rgba(201, 164, 0, 0);
+}
+.projet .projet-content .box .liste a{
+    display: inline-block;
+    background: rgb(201, 164, 0);
+    font-size: 20px;
+    font-weight: 450;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 2px solid rgb(201, 164, 0);
+    transition: all 0.3s ease;
+    text-align: justify; /* text bloc align*/
+}
+.projet .projet-content .box .liste a:hover{
+    color:rgb(201, 164, 0);
+    background: none;
+}
+.projet .projet-content .box .lien a{
+    text-decoration: none;
+    color: white;
+    font-style: oblique;
+}
+.projet iframe{
+    margin-top: 60px;
+}
+.projet p{
+    text-align: justify;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+.projet .projet-content .eseo{
+    margin-top: 60px;
+    background: rgb(48, 48, 48);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 20px;
+    transition: all 0.3s ease;
+}
+/*engagement*/
+.engagement{
+    background-image: url("../images/imag_engagement.jpg");
+    height: 155%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.engagement .titre{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+.engagement .engagement-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap ; /*gestion des lignes*/
+    justify-content: space-between;
+
+}
+.engagement .engagement-content .carte .texte_engagement{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 2px;
+    color: white;
+}
+.engagement .engagement-content .carte p{
+    color:white;
+    text-align: justify;
+}
+.engagement .engagement-content .carte{
+    width: 350px;
+    height: 450px;
+    margin-left: 0 px;
+    margin-bottom: 20px;
+    background: rgba(48, 48, 48, 0.753);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1% 1%;
+    transition: all 0.3s ease;
+}
+.engagement .engagement-content .carte .box{
+    margin-left: 0px;
+}
+.engagement .engagement-content .carte .box img{
+    padding-top: 2%;
+    height: 45%;
+    width: 73%;
+}
+/*Contact*/
+.contact{
+    font-family: 'Segoe UI', sans-serif;
+}
+.contact .titre{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contact svg{
+    color: rgb(201, 164, 0);
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+.contact h4{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 25px;
+}
+.contact .contact-content p{
+    margin: 3px;
+    text-decoration: none;
+    color: black;
+}
+.contact .contact-content .linkedIn a{
+    margin: 3px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
+/*footer*/
+footer{
+    height: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: black;
+}
+footer p{
+    padding: 5px;
+    color: whitesmoke;
+    background: black;
+}
