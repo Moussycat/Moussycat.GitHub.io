@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+N:POGU;Louise;;;
+FN:Louise POGU
+ORG:
+ADR;TYPE=WORK:
+TITLE:Ingénieure électronicienne
+TEL;TYPE=CELL:+33630566816
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:+33630566816
+EMAIL;TYPE=WORK:louise.pogu@gmail.com
+URL;TYPE=Digital Business Card:https://moussycat.github.io/vcard
+URL:
+URL;TYPE=GitHub:https://github.com/github.com/Moussycat
+URL;TYPE=LinkedIn:https://linkedin.com/in/louise-pogu
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:Je suis une future ingénieure en électronique ESEO, spécialisée en électronique et objets connectés
+UID:EnBizCard-100292481
+END:VCARD
